@@ -1,18 +1,15 @@
-.grid-container{
+.container{
     display: grid;
-    width: 1118px;
-    grid-template-columns:65px 1fr 540px ;
-    grid-template-rows: 62px 1fr 525px 1fr;
-    background-color:white;
+    width: 1180px;
+    grid-template-columns: 622px 540px;
+    grid-template-rows: 62px 525px ;
+    grid-template-areas:
+"logo header "
+"maincontent big_image ";
 }
 .logo{
-    border:5px solid black ;
-    grid-column: 1/2;
-    grid-row: 1/2;
+    border:3px solid black;
 }
-.header{
-    border:5px solid black;
-    grid-row: 3/4;
-    grid-column: 1/2;
-    align-content: stretch;
+.maincontent{
+    border:3px solid black;
 }
